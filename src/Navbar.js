@@ -1,6 +1,3 @@
-const nomeIcones = ["paper-plane-outline", "compass-outline", "heart-outline", "person-outline"];
-let icones;
-
 export default function Navbar(){
     return(
         <div class="navbar">
@@ -52,9 +49,11 @@ function Pesquisa(){
 }
 
 function Icones(){
+    const nomeIcones = ["paper-plane-outline", "compass-outline", "heart-outline", "person-outline"];
+
     return(
         <div class="icones">
-            {icones = nomeIcones.map(nome=><ion-icon name={nome}></ion-icon>)}
+            {nomeIcones.map(nome=><ion-icon name={nome}></ion-icon>)}
         </div>
     );
 }

@@ -1,10 +1,9 @@
-const nomesStories = ["9gag", "meowed", "barked", "nathanwpylestrangeplanet", "wawawicomics", "respondeai", "filomoderna", "memeriagourmet"];
-let stories;
-
 export default function Stories(){
+    const nomesStories = ["9gag", "meowed", "barked", "nathanwpylestrangeplanet", "wawawicomics", "respondeai", "filomoderna", "memeriagourmet"];
+
     return(
         <div class="stories">
-            {stories = nomesStories.map(Story)}
+            {nomesStories.map(Story)}
             <Setinha/>
         </div>
     );
